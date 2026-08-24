@@ -1,0 +1,10 @@
+name = "fixtweet"
+main = "./dist/worker.js"
+compatibility_date = "2026-04-11"
+send_metrics = false
+
+# Use .env to configure environment variables, not wrangler.toml
+# except CREDENTIAL_KEY and EXCEPTION_DISCORD_WEBHOOK, which should be set using `wrangler secret put CREDENTIAL_KEY`
+
+[build]
+command = "npm run build"
